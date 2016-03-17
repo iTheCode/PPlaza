@@ -980,12 +980,11 @@
 .list .card.card-gallery {
   display: block;
   float: left;
-  margin: 0 0 0 13px;
   padding: 0;
   width: auto; }
 
 .list.half .item {
-  width: 100%; }
+  }
 
 .list.half .item.card {
   margin-bottom: 16px; }

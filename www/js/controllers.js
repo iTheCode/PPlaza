@@ -29,6 +29,7 @@ angular.module('starter.controllers', [])
         document.getElementsByTagName('ion-nav-bar')[0].style.display = 'block';
     };
 
+
     $scope.noHeader = function() {
         var content = document.getElementsByTagName('ion-content');
         for (var i = 0; i < content.length; i++) {
@@ -125,11 +126,6 @@ angular.module('starter.controllers', [])
     $scope.$parent.clearFabs();
     $scope.$parent.setHeaderFab('left');
 
-    // Delay expansion
-    $timeout(function() {
-        $scope.isExpanded = true;
-        $scope.$parent.setExpanded(true);
-    }, 300);
 
     // Set Motion
     ionicMaterialMotion.fadeSlideInRight();
@@ -139,12 +135,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ProfileCtrl', function($scope, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
-    // Set Header
-    $scope.$parent.showHeader();
     $scope.$parent.clearFabs();
-    $scope.isExpanded = false;
-    $scope.$parent.setExpanded(false);
-    $scope.$parent.setHeaderFab(false);
+    $timeout(function() {
+        $scope.$parent.hideHeader();
+    }, 0);
 
     // Set Motion
     $timeout(function() {

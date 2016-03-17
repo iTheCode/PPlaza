@@ -1,43 +1,111 @@
-<ion-view view-title="Profile">
-    <ion-content ng-class="{expanded:$scope.isExpanded}">
-        <div class="hero slide-up" style="background-image: url('img/profile-bg.jpg');">
-            <div class="content">
-                <div class="avatar" style="background-image: url('img/daenerys.jpg');"></div>
-                <h3><a class="light">Daenerys Targaryen</a></h3>
-                <h4>dragon_mommy</h4>
+<ion-view view-title="Perú Plaza">
+    <ion-content >
+    <div class="bar bar-header " style="top:0;position: relative;">
+        <div class="bar bar-header tabs-icon-top tabs-striped tabs-color-assertive" > 
+            <a class="tab-item active" data-ink-color="#ef473a" data-ink-opacity=".35"> 
+                JEANS
+            </a>
+            <a class="tab-item" data-ink-color="#ef473a" data-ink-opacity=".35"> 
+                T-SHIRTS
+            </a>   
+            <a class="tab-item" data-ink-color="#ef473a" data-ink-opacity=".35"> 
+                ACCESORIES
+            </a>
+            <a class="tab-item" data-ink-color="#ef473a" data-ink-opacity=".35"> 
+                SHOES
+            </a>
+            <a class="tab-item" data-ink-color="#ef473a" data-ink-opacity=".35"> 
+                WATCHES
+            </a>
+        </div>
+    </div>
+        <h4 class="content padding ">Following</h4>
+        <div class="list half">
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                    <h2>RUST DAMN TEE CATAWBA</h2>
+                    <img class="full-image" src="img/sansa-snowcastle3.jpg">
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item stable-bg dark">
+                        <i class="icon ion-android-cart"></i>
+                        4
+                    </a>
+                    <a class="tab-item stable-bg balanced">
+                        <i class="icon ion-social-usd"></i>
+                        29.99
+                    </a>
+                </div>
+            </div>
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                    <h2>TRAVIS LONGSLEEVE BLACK</h2>
+                    <img class="full-image" src="img/sansa-snowcastle.png">
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item stable-bg dark">
+                        <i class="icon ion-android-cart"></i>
+                        4
+                    </a>
+                    <a class="tab-item stable-bg balanced">
+                        <i class="icon ion-social-usd"></i>
+                        29.99
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="tabs tabs-dark tabs-icon-top static">
+        <div class="list half">
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                    <h2>RUST DAMN TEE CATAWBA</h2>
+                    <img class="full-image" src="img/sansa-snowcastle3.jpg">
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item stable-bg dark">
+                        <i class="icon ion-android-cart"></i>
+                        4
+                    </a>
+                    <a class="tab-item stable-bg balanced">
+                        <i class="icon ion-social-usd"></i>
+                        29.99
+                    </a>
+                </div>
+            </div>
+            <div ui-sref="app.profile" class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                    <h2>TRAVIS LONGSLEEVE BLACK</h2>
+                    <img class="full-image" src="img/sansa-snowcastle.png">
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item stable-bg dark">
+                        <i class="icon ion-android-cart"></i>
+                        4
+                    </a>
+                    <a class="tab-item stable-bg balanced">
+                        <i class="icon ion-social-usd"></i>
+                        29.99
+                    </a>
+                </div>
+            </div>
+        </div>
+    <div id="fab-profile" class="bar bar-footer">
+        <div class="tabs tabs-dark tabs-icon-top">
             <a ui-sref="app.activity" class="tab-item">
-                <i class="icon ion-arrow-graph-up-right"></i> Activity
+                <i class="icon ion-navicon-round"></i> Menu
             </a>
             <a ui-sref="app.friends" class="tab-item">
-                <i class="icon ion-android-people"></i> Friends
+                <i class="icon ion-ios-clock"></i> Delivery
             </a>
             <a ui-sref="app.gallery" class="tab-item">
-                <i class="icon ion-images"></i> Photos
+                <i class="icon ion-bag"></i> Shop
+            </a>
+            <a ui-sref="app.gallery" class="tab-item">
+                <i class="icon ion-search"></i> Search
+            </a>
+            <a ui-sref="app.gallery" class="tab-item">
+                <i class="icon ion-more"></i> More
             </a>
         </div>
-        <h4 class="content padding double-padding-x">Following</h4>
-        <div class="list animate-fade-slide-in-right">
-            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
-                <img src="img/jon-snow.jpg">
-                <h2>Jon Snow</h2>
-                <p>Da illest illegitimate</p>
-                <i class="icon ion-chatbubble muted"></i>
-            </a>
-            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
-                <img src="img/sansa.jpg">
-                <h2>Sansa Stark</h2>
-                <p>&amp; Joffrey <strike>sitting</strike> sat in a tree</p>
-                <i class="icon ion-chatbubble muted"></i>
-            </a>
-            <a ui-sref="app.friends" class="item item-avatar item-icon-right">
-                <img src="img/tyrion.jpg">
-                <h2>Tyrion Lannister</h2>
-                <p>B.A.M.F. imp</p>
-                <i class="icon ion-chatbubble muted"></i>
-            </a>
-        </div>
+    </div>
     </ion-content>
 </ion-view>
